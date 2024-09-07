@@ -1,0 +1,26 @@
+{
+  "name": "chat-nuxt-pwa-mijs2024",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxi dev --dotenv .env.local",
+    "generate": "nuxt generate",
+    "generate-local": "nuxi generate --dotenv .env.local",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^1.4.1",
+    "@nuxt/ui": "^2.18.4",
+    "@vite-pwa/nuxt": "^0.10.1",
+    "nuxt": "^3.13.0",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
+  },
+  "dependencies": {
+    "firebase": "^10.13.0",
+    "zod": "^3.23.8"
+  }
+}
