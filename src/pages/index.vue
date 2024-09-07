@@ -87,7 +87,8 @@ const getImage = (id: string) => {
               <div class="text-lg mr-3">{{ message.sender_name }}</div>
               <div class="text-sm">{{ message.timestamp?.toDate().toLocaleString() }}</div>
             </div>
-            <div>{{ message.content }}</div>
+            <div v-if="message.message_type.toLowerCase() === 'text'">{{ message.content }}</div>
+            <div v-if="message.message_type.toLocaleLowerCase() === 'image'"><img class="max-h-60" :src="message.media_url" /></div>
           </div>
         </div>
       </div>
